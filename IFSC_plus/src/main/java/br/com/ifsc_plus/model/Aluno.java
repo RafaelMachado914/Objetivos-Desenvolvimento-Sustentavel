@@ -1,31 +1,31 @@
 package br.com.ifsc_plus.model;
 
 import jakarta.persistence.*;
+import java.util.List;
 
 @Entity
-@Table(name = "Matricula")
+@Table(name = "Aluno")
 
 public class Aluno {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     
-    private int id;
+    private Long id;
     private String nome;
     private String email;
     
-    @ManyToOne
-    @JoinColumn(name = "id_curso")
+    @OneToMany(mappedBy = "aluno")
+    private List<Matricula> matriculas;
     
-    private Curso curso;
 
     public Aluno() {
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -45,13 +45,15 @@ public class Aluno {
         this.email = email;
     }
 
-    public Curso getCurso() {
-        return curso;
+    public List<Matricula> getMatriculas() {
+        return matriculas;
     }
 
-    public void setCurso(Curso curso) {
-        this.curso = curso;
+    public void setMatriculas(List<Matricula> matriculas) {
+        this.matriculas = matriculas;
     }
+
+    
     
     
     

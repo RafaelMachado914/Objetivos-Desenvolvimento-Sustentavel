@@ -1,1 +1,11 @@
+br\com\ifsc_plus\dao\CursoDao.class
+br\com\ifsc_plus\view\TelaMenu$1.class
+br\com\ifsc_plus\model\Aluno.class
+br\com\ifsc_plus\dao\AlunoDao.class
+br\com\ifsc_plus\util\JPAUtil.class
+br\com\ifsc_plus\dao\MatriculaDAO.class
+br\com\ifsc_plus\view\TelaMenu$2.class
+br\com\ifsc_plus\model\Curso.class
 br\com\ifsc_plus\IFSC_plus.class
+br\com\ifsc_plus\view\TelaMenu.class
+br\com\ifsc_plus\model\Matricula.class
