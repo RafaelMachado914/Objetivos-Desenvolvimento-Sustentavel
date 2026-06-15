@@ -4,28 +4,28 @@ import jakarta.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name = "Curso")
+@Table(name = "curso")
 
 public class Curso {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     
-    private int id;    
+    private Long id;    
     private String nome;
     private int cargaHoraria;
     
-    @OneToMany(mappedBy = "Curso")
-    private List<Aluno> alunos;
+    @OneToMany(mappedBy = "curso")
+    private List<Matricula> matriculas;
 
     public Curso() {
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -45,13 +45,17 @@ public class Curso {
         this.cargaHoraria = cargaHoraria;
     }
 
-    public List<Aluno> getAlunos() {
-        return alunos;
+    public List<Matricula> getMatriculas() {
+        return matriculas;
     }
 
-    public void setAlunos(List<Aluno> alunos) {
-        this.alunos = alunos;
+    public void setMatriculas(List<Matricula> matriculas) {
+        this.matriculas = matriculas;
     }
+
+
+
+
     
     
     
