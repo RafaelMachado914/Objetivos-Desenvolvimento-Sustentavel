@@ -33,3 +33,7 @@ Ex do atributo Status: Matriculado Em andamento
 </code>
 <h3>Relacionamentos</h3>
 Aluno (1) ---- (N) MatrículaUm aluno pode ter várias matrículas.Curso (1) ---- (N) MatrículaUm curso pode possuir vários alunos matriculados.
+</br>
+</br>
+<img width="302" height="454" alt="imagem diagrama banco" src="https://github.com/user-attachments/assets/dd9e1e23-ae56-41da-8ad3-301dbbd6fec6" />
+
