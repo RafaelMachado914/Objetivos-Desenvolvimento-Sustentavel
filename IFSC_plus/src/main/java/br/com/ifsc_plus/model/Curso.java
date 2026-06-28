@@ -14,6 +14,7 @@ public class Curso {
     private Long id;    
     private String nome;
     private int cargaHoraria;
+    private String descricao;
     
     @OneToMany(mappedBy = "curso")
     private List<Matricula> matriculas;
@@ -48,6 +49,14 @@ public class Curso {
     public List<Matricula> getMatriculas() {
         return matriculas;
     }
+    
+    public String getDescricao() {
+    return descricao;
+}
+
+public void setDescricao(String descricao) {
+    this.descricao = descricao;
+}
 
     public void setMatriculas(List<Matricula> matriculas) {
         this.matriculas = matriculas;
