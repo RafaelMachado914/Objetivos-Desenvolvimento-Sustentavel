@@ -1,4 +1,12 @@
 # Projeto de Desenvolvimento Sustentável
+
+<img width="683"  alt="Captura de tela 2026-07-06 080032" src="https://github.com/user-attachments/assets/decf35ec-c767-4344-9048-06fe1d236520" />
+
+<img width="683"  alt="Captura de tela 2026-07-06 080119" src="https://github.com/user-attachments/assets/9dea784c-5323-4eb7-b9f9-d51d8d5b6228" />
+<img width="683"  alt="Captura de tela 2026-07-06 080106" src="https://github.com/user-attachments/assets/cd1749e0-03a5-434f-85f8-89db65ac9fdb" />
+<img width="683"  alt="Captura de tela 2026-07-06 080049" src="https://github.com/user-attachments/assets/36ab7a0d-9508-459e-a0ce-ddb650d341c8" />
+
+
 <h2>Objetivo</h2>
 Desenvolver, em grupo, um sistema desktop utilizando Java Swing, Hibernate e MySQL, a partir de uma demanda relacionada aos Objetivos de Desenvolvimento Sustentável, contemplando modelagem de banco de dados, CRUD de tabelas relacionadas, validação de informações, organização do código em camadas e apresentação funcional da solução.
 <h2>ODS Relacionado</h2>
