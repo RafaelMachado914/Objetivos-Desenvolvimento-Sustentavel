@@ -63,7 +63,10 @@ public void setDescricao(String descricao) {
     }
 
 
-
+    @Override
+    public String toString() {
+        return nome;
+    }    
 
     
     

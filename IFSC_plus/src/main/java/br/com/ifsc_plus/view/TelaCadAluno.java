@@ -1,17 +1,17 @@
 package br.com.ifsc_plus.view;
 
 
-import br.com.ifsc_plus.dao.CursoDao;
-import br.com.ifsc_plus.model.Curso;
+import br.com.ifsc_plus.dao.AlunoDao;
+import br.com.ifsc_plus.model.Aluno;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 
-public class TelaCadCursorso extends javax.swing.JFrame {
+public class TelaCadAluno extends javax.swing.JFrame {
 
     private Long idSelecionado;
 
-    public TelaCadCursorso() {
+    public TelaCadAluno() {
         initComponents();
         listarCursos();
     }
@@ -32,8 +32,6 @@ public class TelaCadCursorso extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jTextField2 = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -84,7 +82,7 @@ public class TelaCadCursorso extends javax.swing.JFrame {
                 .addComponent(label1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(241, 241, 241))
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(38, 38, 38)
+                .addGap(35, 35, 35)
                 .addComponent(SairBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -93,7 +91,7 @@ public class TelaCadCursorso extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(label1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(171, 171, 171)
+                .addGap(174, 174, 174)
                 .addComponent(SairBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -102,19 +100,15 @@ public class TelaCadCursorso extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel1.setText("CADASTRO DE CURSOS");
+        jLabel1.setText("CADASTRO DE ALUNO");
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel2.setText("NOME DO CURSO:");
+        jLabel2.setText("NOME DO ALUNO:");
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel3.setText("DESCRIÇÃO:");
-
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel4.setText("CARGA HORARIA:");
+        jLabel3.setText("EMAIL:");
 
         jButton1.setBackground(new java.awt.Color(51, 204, 0));
         jButton1.setForeground(new java.awt.Color(255, 0, 0));
@@ -200,7 +194,7 @@ public class TelaCadCursorso extends javax.swing.JFrame {
                         .addComponent(jLabel1))
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(19, 19, 19)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addComponent(jLabel2)
                                 .addGap(18, 18, 18)
@@ -210,18 +204,14 @@ public class TelaCadCursorso extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 800, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addComponent(jLabel4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 749, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(39, 39, 39)
+                                .addGap(38, 38, 38)
                                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(39, 39, 39)
+                                .addGap(38, 38, 38)
                                 .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(39, 39, 39)
+                                .addGap(40, 40, 40)
                                 .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(39, 39, 39)
+                                .addGap(40, 40, 40)
                                 .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(41, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
@@ -242,19 +232,15 @@ public class TelaCadCursorso extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(41, 41, 41)
+                .addGap(36, 36, 36)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(32, 32, 32)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(45, Short.MAX_VALUE))
         );
 
@@ -290,13 +276,12 @@ public class TelaCadCursorso extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-   Curso curso = new Curso();
+   Aluno curso = new Aluno();
 
    curso.setNome(jTextField1.getText());
-   curso.setDescricao(jTextField2.getText());   // <-- FALTAVA ESTA LINHA
-   curso.setCargaHoraria(Integer.parseInt(jTextField3.getText()));
+   curso.setEmail(jTextField2.getText());   // <-- FALTAVA ESTA LINHA
 
-CursoDao dao = new CursoDao();
+AlunoDao dao = new AlunoDao();
 dao.salvar(curso);
 
     JOptionPane.showMessageDialog(this, "Curso cadastrado!");
@@ -306,14 +291,13 @@ dao.salvar(curso);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-      Curso curso = new Curso();
+      Aluno curso = new Aluno();
 
     curso.setId(idSelecionado);
     curso.setNome(jTextField1.getText());
-    curso.setDescricao(jTextField2.getText());
-    curso.setCargaHoraria(Integer.parseInt(jTextField3.getText()));
+    curso.setEmail(jTextField2.getText());
 
-    CursoDao dao = new CursoDao();
+    AlunoDao dao = new AlunoDao();
     dao.atualizar(curso);
 
     listarCursos();
@@ -321,7 +305,7 @@ dao.salvar(curso);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-    CursoDao dao = new CursoDao();
+    AlunoDao dao = new AlunoDao();
 
     dao.excluir(idSelecionado);
 
@@ -342,7 +326,6 @@ dao.salvar(curso);
 
     jTextField1.setText(jTable1.getValueAt(linha, 1).toString());
     jTextField2.setText(jTable1.getValueAt(linha, 2).toString());
-    jTextField3.setText(jTable1.getValueAt(linha, 3).toString());
     }//GEN-LAST:event_jTable1MouseClicked
 
     private void SairBotaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SairBotaoActionPerformed
@@ -354,7 +337,7 @@ dao.salvar(curso);
 
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new TelaCadCursorso().setVisible(true);
+                new TelaCadAluno().setVisible(true);
             }
         });
     }
@@ -362,7 +345,6 @@ dao.salvar(curso);
     private void limparCampos() {
     jTextField1.setText("");
     jTextField2.setText("");
-    jTextField3.setText("");
     jTextField1.requestFocus();
 }
     
@@ -373,15 +355,14 @@ dao.salvar(curso);
 
     modelo.setRowCount(0);
 
-    CursoDao dao = new CursoDao();
+    AlunoDao dao = new AlunoDao();
 
-    for (Curso curso : dao.listarTodos()) {
+    for (Aluno curso : dao.listarTodos()) {
 
         modelo.addRow(new Object[]{
             curso.getId(),
             curso.getNome(),
-            curso.getDescricao(),
-            curso.getCargaHoraria()
+            curso.getEmail(),
         });
 
     }
@@ -399,7 +380,6 @@ dao.salvar(curso);
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -407,7 +387,6 @@ dao.salvar(curso);
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
     private java.awt.Label label1;
     // End of variables declaration//GEN-END:variables
 }
