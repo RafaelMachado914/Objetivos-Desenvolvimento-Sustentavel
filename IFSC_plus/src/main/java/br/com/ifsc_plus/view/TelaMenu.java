@@ -32,8 +32,6 @@ public class TelaMenu extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         label1 = new java.awt.Label();
         SairBotao = new javax.swing.JButton();
-        SairBotao1 = new javax.swing.JButton();
-        SairBotao2 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -68,36 +66,14 @@ public class TelaMenu extends javax.swing.JFrame {
         label1.setForeground(new java.awt.Color(255, 255, 255));
         label1.setText("IFSC +");
 
-        SairBotao.setBackground(new java.awt.Color(153, 255, 153));
+        SairBotao.setBackground(new java.awt.Color(255, 255, 255));
         SairBotao.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
-        SairBotao.setForeground(new java.awt.Color(204, 0, 0));
+        SairBotao.setForeground(new java.awt.Color(0, 0, 0));
         SairBotao.setText("SAIR");
-        SairBotao.setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new java.awt.Color(255, 51, 51)));
+        SairBotao.setBorder(null);
         SairBotao.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SairBotaoActionPerformed(evt);
-            }
-        });
-
-        SairBotao1.setBackground(new java.awt.Color(153, 255, 153));
-        SairBotao1.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
-        SairBotao1.setForeground(new java.awt.Color(204, 0, 0));
-        SairBotao1.setText("CADASTRAR CURSO");
-        SairBotao1.setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new java.awt.Color(255, 51, 51)));
-        SairBotao1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SairBotao1ActionPerformed(evt);
-            }
-        });
-
-        SairBotao2.setBackground(new java.awt.Color(153, 255, 153));
-        SairBotao2.setFont(new java.awt.Font("SansSerif", 1, 18)); // NOI18N
-        SairBotao2.setForeground(new java.awt.Color(204, 0, 0));
-        SairBotao2.setText("CADASTRAR ALUNO");
-        SairBotao2.setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new java.awt.Color(255, 51, 51)));
-        SairBotao2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                SairBotao2ActionPerformed(evt);
             }
         });
 
@@ -110,11 +86,8 @@ public class TelaMenu extends javax.swing.JFrame {
                 .addComponent(label1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(241, 241, 241))
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(34, 34, 34)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(SairBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(SairBotao1, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(SairBotao2, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(33, 33, 33)
+                .addComponent(SairBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -122,11 +95,7 @@ public class TelaMenu extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(label1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(78, 78, 78)
-                .addComponent(SairBotao2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(46, 46, 46)
-                .addComponent(SairBotao1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(54, 54, 54)
+                .addGap(174, 174, 174)
                 .addComponent(SairBotao, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -292,16 +261,8 @@ public class TelaMenu extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void SairBotao2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SairBotao2ActionPerformed
-        new TelaCadAluno().setVisible(true);
-    }//GEN-LAST:event_SairBotao2ActionPerformed
-
-    private void SairBotao1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SairBotao1ActionPerformed
-        new TelaCadCursorso().setVisible(true);
-    }//GEN-LAST:event_SairBotao1ActionPerformed
-
     private void SairBotaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SairBotaoActionPerformed
-        System.exit(0);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);;
     }//GEN-LAST:event_SairBotaoActionPerformed
 
     private void MATRICULAR1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MATRICULAR1ActionPerformed
@@ -450,8 +411,6 @@ private void limparCampos(){
     private javax.swing.JButton MATRICULAR;
     private javax.swing.JButton MATRICULAR1;
     private javax.swing.JButton SairBotao;
-    private javax.swing.JButton SairBotao1;
-    private javax.swing.JButton SairBotao2;
     private javax.swing.JComboBox<Aluno> jComboBox1;
     private javax.swing.JComboBox<Curso> jComboBox2;
     private javax.swing.JFrame jFrame1;

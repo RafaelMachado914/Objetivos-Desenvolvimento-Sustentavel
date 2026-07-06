@@ -1,5 +1,5 @@
+br\com\ifsc_plus\view\MENU$4.class
 br\com\ifsc_plus\model\Aluno.class
-br\com\ifsc_plus\view\TelaMenu$9.class
 br\com\ifsc_plus\dao\MatriculaDAO.class
 br\com\ifsc_plus\view\TelaMenu$2.class
 br\com\ifsc_plus\view\TelaCadCursorso$7.class
@@ -8,11 +8,13 @@ br\com\ifsc_plus\view\TelaCadAluno$2.class
 br\com\ifsc_plus\view\TelaMenu.class
 br\com\ifsc_plus\view\TelaCadCursorso$2.class
 br\com\ifsc_plus\model\Matricula.class
+br\com\ifsc_plus\view\MENU.class
 br\com\ifsc_plus\view\TelaCadAluno$7.class
 br\com\ifsc_plus\view\TelaMenu$6.class
 br\com\ifsc_plus\view\TelaCadAluno$4.class
 br\com\ifsc_plus\util\JPAUtil.class
-br\com\ifsc_plus\view\TelaMenu$8.class
+br\com\ifsc_plus\view\MENU$2.class
+br\com\ifsc_plus\view\MENU$5.class
 br\com\ifsc_plus\view\TelaCadCursorso$4.class
 br\com\ifsc_plus\view\TelaCadAluno$1.class
 br\com\ifsc_plus\dao\CursoDao.class
@@ -24,6 +26,7 @@ br\com\ifsc_plus\view\TelaCadAluno$8.class
 br\com\ifsc_plus\view\TelaCadCursorso$1.class
 br\com\ifsc_plus\view\TelaMenu$5.class
 br\com\ifsc_plus\view\TelaCadAluno$3.class
+br\com\ifsc_plus\view\MENU$3.class
 br\com\ifsc_plus\view\TelaCadCursorso$6.class
 br\com\ifsc_plus\view\TelaMenu$1.class
 br\com\ifsc_plus\dao\AlunoDao.class
@@ -34,3 +37,4 @@ br\com\ifsc_plus\IFSC_plus.class
 br\com\ifsc_plus\view\TelaCadCursorso$8.class
 br\com\ifsc_plus\view\TelaCadAluno$5.class
 br\com\ifsc_plus\view\TelaMenu$4.class
+br\com\ifsc_plus\view\MENU$1.class
